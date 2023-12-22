@@ -1,4 +1,4 @@
-# J.Jullaphong's Neovim Configuration
+# J-Jullaphong's Neovim Configuration
 
 ## Installation
 ```
