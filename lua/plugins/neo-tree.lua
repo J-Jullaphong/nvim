@@ -14,7 +14,8 @@ return {
         },
       },
     }
-    vim.keymap.set('n', '<C-f>', ':Neotree filesystem toggle left<CR>', {})
+    vim.keymap.set('n', '<C-f>', ':Neotree filesystem focus left<CR>', {})
+    vim.keymap.set('n', '<C-e>', ':Neotree filesystem close<CR>', {})
     vim.keymap.set('n', '<leader>bf', ':Neotree buffers toggle float<CR>', {})
   end
 }
