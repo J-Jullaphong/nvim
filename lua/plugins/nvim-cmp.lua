@@ -7,11 +7,13 @@ return {
     "hrsh7th/cmp-nvim-lua",
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-cmdline",
+    "L3MON4D3/LuaSnip",
   },
   event = "InsertEnter",
   config = function()
     local cmp = require 'cmp'
     local luasnip = require 'luasnip'
+    require("luasnip.loaders.from_vscode").lazy_load()
     cmp.setup({
       completion = {
         completeopt = 'menu,menuone,noinsert',

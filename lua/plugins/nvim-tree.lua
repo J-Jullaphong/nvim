@@ -1,13 +1,15 @@
 return {
   "nvim-tree/nvim-tree.lua",
   version = "*",
-  lazy = false,
+  lazy = true,
+  keys = "<C-f>",
+  cmd = "NvimTreeFocus",
   dependencies = {
     "nvim-tree/nvim-web-devicons",
   },
   config = function()
     require("nvim-tree").setup({})
-    vim.keymap.set('n', '<C-f>', ':NvimTreeFocus<CR>')
-    vim.keymap.set('n', '<C-c>', ':NvimTreeClose<CR>')
+    vim.keymap.set("n", "<C-f>", ":NvimTreeFocus<CR>")
+    vim.keymap.set("n", "<C-c>", ":NvimTreeClose<CR>")
   end,
 }
