@@ -1,5 +1,3 @@
-vim.g.mapleader = " "
-
 local opt = vim.opt
 
 opt.number = true
@@ -26,6 +24,3 @@ opt.clipboard:append("unnamedplus")
 
 opt.splitright = true
 opt.splitbelow = true
-
-vim.keymap.set('n', '<Tab>', ':bnext<CR>', {})
-vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>', {})
