@@ -18,3 +18,8 @@ map.set("n", "<C-h>", "<C-w>h")
 map.set("n", "<C-j>", "<C-w>j")
 map.set("n", "<C-k>", "<C-w>k")
 map.set("n", "<C-l>", "<C-w>l")
+
+map.set("n", "<A-j>", "<cmd>m .+1<CR>==")
+map.set("n", "<A-k>", "<cmd>m .-2<CR>==")
+map.set("v", "<A-j>", "<cmd>m '>+1<CR>gv=gv")
+map.set("v", "<A-k>", "<cmd>m '<-2<CR>gv=gv")
